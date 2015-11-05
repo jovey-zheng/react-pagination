@@ -1,11 +1,15 @@
+.base {
+  position: relative;
+  width: 1000px;
+  margin: 0 auto;
+}
 /* pagInation */
 .pagination_main {
-  position: absolute;
-  right: 10px;
-  bottom: 20px;
-  float: right;
   border: 1px solid #e3e3e3;
   border-radius: 3px;
+  display: inline-block;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 .pagination_main .button_div {
   display: inline-block;

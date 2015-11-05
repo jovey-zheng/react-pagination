@@ -1,11 +1,8 @@
 var HtmlWebpackPlugin = require('html-webpack-plugin');
 
-var config = require('./config');
-
 module.exports = {
   entry: {
     app: [__dirname + '/src/app/index'],
-    login: [__dirname + '/src/login/index'],
   },
   output: {
     path: __dirname + '/_dist',
@@ -46,16 +43,6 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: __dirname + '/src/app/index.html',
       favicon: __dirname + '/src/app/favicon.ico',
-      inject: false,
-    }),
-    new HtmlWebpackPlugin({
-      filename: 'login.html',
-      template: __dirname + '/src/login/login.html',
-      inject: false,
-    }),
-    new HtmlWebpackPlugin({
-      filename: 'forget.html',
-      template: __dirname + '/src/login/forget.html',
       inject: false,
     }),
   ],

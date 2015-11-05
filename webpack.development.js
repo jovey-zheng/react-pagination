@@ -10,7 +10,6 @@ module.exports = merge(webpackConfig, {
   debug: true,
   entry: {
     app: ['webpack-hot-middleware/client'],
-    login: ['webpack-hot-middleware/client'],
   },
   module: {
     loaders: [{
